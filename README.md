@@ -1,4 +1,3 @@
-0x01. React intro
 
 1. **Creating a Basic JavaScript Application using React**:
    - Introduce React as a JavaScript library for building user interfaces.
