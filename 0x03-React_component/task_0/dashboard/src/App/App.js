@@ -28,7 +28,8 @@ class App extends Component {
       <Fragment>
         <Notifications listNotifications={listNotifications} />
         <Header />
-        {isLoggedIn ? <CourseList listCourses={listCourses} /> : <Login />}
+        {isLoggedIn ? <CourseList listCourses={listCourses} />
+	: <Login />}
         <Footer />
       </Fragment>
     );
