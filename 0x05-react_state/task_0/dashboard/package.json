@@ -57,5 +57,8 @@
 			"\\.(jpg|jpeg|png|gif|ttf|eot|svg)$": "<rootDir>/__mocks__/fileMock.js"
 		},
 		"testEnvironment": "jsdom"
+	},
+	"scripts": {
+		"tests": "jest"
 	}
 }
