@@ -19,20 +19,18 @@ class App extends Component {
 			displayDrawer: false
 		}
 	}
-	// if App component is mounted, check if user is holding down 'control'
-	// and 'h' keys simultaneously, and if so, alert and call logOut function.
 
-	// class function to check if component is mounted
+	// The class function to check if component is mounted
 	componentDidMount() {
 		window.addEventListener('keydown', this.keyDownHandler);
 	}
 
-	// class function to check if component is unmounted
+	// The class function to check if component is unmounted
 	componentWillUnmount() {
 		window.removeEventListener('keydown', this.keyDownHandler);
 	}
 
-	// class function to check if ctrl-h is pressed
+	// The class function to check if ctrl-h is pressed
 	keyDownHandler = (e) => {
 		if (e.keyCode === 72 && e.ctrlKey) {
 			alert('Logging you out');
@@ -40,18 +38,17 @@ class App extends Component {
 		}
 	}
 
-	// Changes value of displayDrawer state to true
+	// makes changes to the value of displayDrawer state to true
 	handleDisplayDrawer = () => {
 		this.setState({displayDrawer: true})
 	}
 
-	// Changes value of displayDrawer state to false
+	// makes changes to the value of displayDrawer state to false
 	handleHideDrawer = () => {
 		this.setState({displayDrawer: false})
 	}
 
 	render() {
-		// assign props/state to local variables
 		const { isLoggedIn } = this.props;
 		const { displayDrawer } = this.state;
 
