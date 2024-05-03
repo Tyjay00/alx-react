@@ -1,5 +1,3 @@
-Here are all the tasks summarized:
-
 ### Task 0: Inline Styling
 - Copy the task_5 directory from the 0x04. React components project and rename it to task_0.
 - Modify the CourseListRow component to change background colors using inline styling.
