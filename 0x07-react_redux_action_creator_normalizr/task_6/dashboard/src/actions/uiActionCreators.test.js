@@ -4,12 +4,12 @@ import { login, logout, hideNotificationDrawer, displayNotificationDrawer } from
 
 describe("tests for UI notification action creators", () => {
   it("should create proper action for login", () => {
-    const email = "james@gmail.com";
-    const password = "heheheh";
+    const email = "tyronejoel04@gmail";
+    const password = "gwgwgwgw";
 
     expect(login(email, password)).toEqual({
       type: LOGIN,
-      user: { email: "james@gmail.com", password: "heheheh" },
+      user: { email: "tyronejoel04@gmail.com", password: "gwgwgwgw" },
     });
   });
 
